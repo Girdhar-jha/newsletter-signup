@@ -16,7 +16,7 @@ app.listen(process.env.PORT||3000,function () {
 });
 //Sending the signup.html file to the browser as soon as a request is made on localhost:3000
 app.get("/", function (req, res) {
- res.sendFile(__dirname + "/signup.html");
+ res.sendFile(__dirname + "/index.html");
 });
 //Setting up MailChimp
 mailchimp.setConfig({
